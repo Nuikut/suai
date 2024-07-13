@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SvgImageSource.Droid</name>
+    </assembly>
+    <members>
+        <member name="T:Xamarin.Forms.Svg.Droid.SvgImageSourceHandler">
+            <summary>
+            Svg image source handler.
+            </summary>
+        </member>
+        <member name="M:Xamarin.Forms.Svg.Droid.SvgImageSourceHandler.LoadImageAsync(Xamarin.Forms.ImageSource,Android.Content.Context,System.Threading.CancellationToken)">
+            <summary>
+            Loads the image async.
+            </summary>
+            <returns>The image async.</returns>
+            <param name="imagesource">Imagesource.</param>
+            <param name="context">Context.</param>
+            <param name="cancelationToken">Cancelation token.</param>
+        </member>
+        <member name="T:Xamarin.Forms.Svg.Droid.SvgImage">
+            <summary>
+            Svg image.
+            </summary>
+        </member>
+        <member name="M:Xamarin.Forms.Svg.Droid.SvgImage.Init(Android.Content.Context)">
+            <summary>
+            Init this instance.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SvgImageSource.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:Xamarin.Forms.Svg.iOS.SvgImageSourceHandler">
+            <summary>
+            Svg image source handler.
+            </summary>
+        </member>
+        <member name="M:Xamarin.Forms.Svg.iOS.SvgImageSourceHandler.LoadImageAsync(Xamarin.Forms.ImageSource,System.Threading.CancellationToken,System.Single)">
+            <summary>
+            Loads the image async.
+            </summary>
+            <returns>The image async.</returns>
+            <param name="imagesource">Imagesource.</param>
+            <param name="cancelationToken">Cancelation token.</param>
+            <param name="scale">Scale.</param>
+        </member>
+        <member name="T:Xamarin.Forms.Svg.iOS.SvgImage">
+            <summary>
+            Svg image.
+            </summary>
+        </member>
+        <member name="M:Xamarin.Forms.Svg.iOS.SvgImage.Init">
+            <summary>
+            Init this instance.
+            </summary>
+        </member>
+    </members>
+</doc>

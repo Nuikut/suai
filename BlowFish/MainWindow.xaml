@@ -1,0 +1,63 @@
+﻿<Window x:Class="BlowFish.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Blowfish" Height="550" Width="900">
+
+    <Grid Background="#0a2227">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border Grid.ColumnSpan="5" Grid.RowSpan="5" Background="#101113" Height="420" Width="560" CornerRadius="15" />
+        <TextBlock Name="Header" Grid.Row="1" Grid.Column="1" Text="Greetings" Foreground="Azure" FontSize="32"
+                   FontWeight="Medium" HorizontalAlignment="Center" Padding="12" />
+        <TextBox Name="InputBox" Grid.Column="1" Grid.Row="2" Height="60" Background="#222327" TextAlignment="Center"
+                 VerticalContentAlignment="Center" FontSize="20" Foreground="Azure" TextWrapping="Wrap"
+                 Loaded="InputBox_OnLoaded" MouseEnter="KeyInputMouseEnter">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15" />
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox Name="OutputBox" Grid.Column="1" Grid.Row="3" Height="60" Background="#222327" TextAlignment="Center"
+                 VerticalContentAlignment="Center" FontSize="20" Foreground="Azure" TextWrapping="Wrap">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15" />
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button Name="KeyButton" Content="Let's begin" Foreground="Azure" FontSize="20" FontWeight="SemiBold"
+                Click="KeyButton_OnClick" Grid.Column="1" Grid.Row="3" Height="60" Background="#054845">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="MainButton" Content="Go" Foreground="Azure" FontSize="20" FontWeight="SemiBold" Grid.Column="1"
+                Grid.Row="4" Margin="0, 0, 0, 70" Height="40" Background="#054845" Click="Go">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Image Name="KeyImage" Source="keyImage.jpg" Grid.Row="2" Margin="200, 0, 0, 0" />
+        <Image Name="OpenEnvelopeImage" Source="/openEnvelope.jpg" Grid.Row="2" Margin="200, 0, 0, 0" />
+        <Image Name="ClosedEnvelopeImage" Source="/closedEnvelope.jpg" Grid.Row="3" Margin="195, 0, 0, 0" />
+    </Grid>
+</Window>
